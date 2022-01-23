@@ -34,7 +34,7 @@ def get_params(argv='1'):
         doa_objective='mse',        # if is_accdoa=True this is ignored, otherwise it supports: mse, masked_mse. where mse- original seld approach; masked_mse - dcase 2020 approach
 
         label_sequence_length=60,   # Feature sequence length
-        batch_size=25,             # Batch size
+        batch_size=32,             # Batch size
         dropout_rate=0.05,          # Dropout rate, constant for all layers
         nb_cnn2d_filt=64,           # Number of CNN nodes, constant for each layer
         f_pool_size=[4, 4, 2],      # CNN frequency pooling, length of list = number of CNN layers, list value = pooling per layer
